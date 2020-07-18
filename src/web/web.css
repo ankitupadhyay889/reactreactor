@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+/* nav bar */
+
+.bar{
+    display: flex;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    /* background-color: black; */
+    font-size: 30px;
+}
+
+.viru{
+    padding-left: 65vw;
+    font-family: 'Dancing Script', cursive;
+}
+
+.logo img{
+    border-radius: 50%;
+    width: 70px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+/* home */
+
+.home{
+    margin-top: 170px;
+    display: flex;
+    padding-left: 250px;
+}
+
+.home h1 .m{
+    color: rgb(73, 188, 192);
+    font-weight: 100;
+
+}
+
+.home h1{
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.home p{
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-family: 'Dancing Script', cursive;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    padding-left: 250px;
+}
+
+footer #p{
+    padding-left: 50vw;
+}
+
+.mx-5 .animated{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+.fo{
+    padding-left: 595px;
+    padding-top: 30px;
+}
+
+.fo input{
+    width: 700px;
+}
+
+.fo button{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:360px){
+    .bar{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0 -40px;
+    }
+    .logo img{
+        text-align: center;
+    }
+    .home{
+        float: left;
+        display: block;
+        margin: 0px -150px auto;
+        font-size: 50px;
+        padding-right: 500px;
+    }
+    footer{
+        margin: -450px -50%;
+    }
+    form{
+        display: block;
+        float: left;
+        margin: 20px -500px;
+    }
+}
